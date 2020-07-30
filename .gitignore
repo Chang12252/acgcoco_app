@@ -1,0 +1,7 @@
+# Project exclude paths
+/unpackage/
+/backend/
+pages.json
+vue.config.js
+.idea*
+/graceUI/

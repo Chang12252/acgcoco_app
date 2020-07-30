@@ -1,0 +1,62 @@
+<template>
+	<gracePage :customHeader="false">
+		<!-- 页面主体 -->
+		<view slot="gBody" class="grace-body">
+			<view style="height:1000px;"></view>
+			<view style="width:100%; height:150rpx;"></view>
+		</view>
+		<!-- 底部导航 -->
+		<view class="grace-footer grace-grids grace-nowrap grace-border-t" slot="gFooter">
+			<view class="grace-grids-items" @tap="changeFooter(1)">
+				<text class="grace-grids-icon grace-icons" :class="[footerCurrent == 1 ? 'grace-footer-active' : '']">&#xe61f;</text>
+				<text class="grace-grids-text" :class="[footerCurrent == 1 ? 'grace-footer-active' : '']">wifi</text>
+				<text class="grace-badge grace-bg-red grace-badge-absolute grace-white" style="top:15rpx; right:15rpx;">8</text>
+			</view>
+			<view class="grace-grids-items" @tap="changeFooter(2)">
+				<text class="grace-grids-icon grace-icons" :class="[footerCurrent == 2 ? 'grace-footer-active' : '']">&#xe6cd;</text>
+				<text class="grace-grids-text" :class="[footerCurrent == 2 ? 'grace-footer-active' : '']">微博</text>
+			</view>
+			<view class="grace-grids-items" @tap="changeFooter(3)">
+				<text class="grace-grids-icon grace-icons" :class="[footerCurrent == 3 ? 'grace-footer-active' : '']">&#xe6cd;</text>
+				<text class="grace-grids-text" :class="[footerCurrent == 3 ? 'grace-footer-active' : '']">微信</text>
+			</view>
+			<view class="grace-grids-items" @tap="changeFooter(4)">
+				<text class="grace-grids-icon grace-icons" :class="[footerCurrent == 4 ? 'grace-footer-active' : '']">&#xe63c;</text>
+				<text class="grace-grids-text" :class="[footerCurrent == 4 ? 'grace-footer-active' : '']">QQ</text>
+			</view>
+			<view class="grace-grids-items" @tap="changeFooter(5)">
+				<text class="grace-grids-icon grace-icons" :class="[footerCurrent == 5 ? 'grace-footer-active' : '']">&#xe628;</text>
+				<text class="grace-grids-text" :class="[footerCurrent == 5 ? 'grace-footer-active' : '']">帮助</text>
+			</view>
+		</view>
+	</gracePage>
+</template>
+<script>
+import gracePage from '../../graceUI/weexComponents/gracePage.nvue';
+export default {
+    data() {
+        return {
+			footerCurrent : 1
+		}
+    },
+    methods: {
+		changeFooter : function (index) {
+			this.footerCurrent = index;
+		}
+    },
+    components:{
+		gracePage
+    }
+}
+</script>
+<style>
+/* 调整宫格大小 */
+.grace-grids-items{width:150rpx;}
+.grace-grids-icon{height:60rpx; line-height:60rpx; font-size:50rpx; color:#6B7375;}
+.grace-grids-text{line-height:30rpx; font-size:20rpx; margin-top:2px; color:#6B7375;}
+.grace-footer-active{color:#3688FF !important;}
+
+.grace-grids-items2{padding:6rpx 0; width:120rpx;}
+.grace-grids-icon2{height:50rpx; line-height:50rpx; font-size:40rpx; color:#6B7375;}
+.grace-grids-text2{line-height:28rpx; font-size:20rpx; margin-top:2px; color:#6B7375;}
+</style>

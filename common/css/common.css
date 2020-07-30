@@ -1,0 +1,323 @@
+/* 全局背景色 字体*/
+body{
+	background-color: #FFFFFF;
+	font-family: SimHei;
+	font-weight: bold;
+}
+
+/* 布局 */
+.flexRow{
+	display: flex;
+	flex-direction: row;
+}
+.flexColumn{
+	display: flex;
+	flex-direction: column;
+}
+/* 上下 左右对齐 */
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* 主轴居中 */
+.mainCenter{
+	justify-content:center;
+}
+/* 交叉轴居中 */
+.alignCenter {
+	align-items: center;
+}
+/* 两端对齐 */
+.between {
+	justify-content: space-between; 
+}
+/* 份值 */
+.flexGrow3{
+	flex-grow:3;
+}
+.flexGrow2{
+	flex-grow:2;
+}
+.flexGrow1{
+	flex-grow:1;
+}
+
+
+/* 常用宽度 */
+.width100{
+	width: 100%;
+}
+.width95{
+	width: 95%;
+}
+.width90{
+	width: 90%;
+}
+.width85{
+	width: 85%;
+}
+.width80{
+	width: 80%;
+}
+.width70{
+	width: 70%;
+}
+.width60{
+	width: 60%;
+}
+.width50{
+	width: 50%;
+}
+.width45{
+	width: 45%;
+}
+.width40{
+	width: 40%;
+}
+.width31{
+	width: 31%;
+}
+.width30{
+	width: 30%;
+}
+
+.width25{
+	width: 25%;
+}
+.width20{
+	width: 20%;
+}
+.width15{
+	width: 15%;
+}
+.width10{
+	width: 10%;
+}
+.width5{
+	width: 5%;
+}
+.width2{
+	width: 2%;
+}
+
+.width50r{
+	width: 50rpx;
+}
+
+
+/* 常用高度 */
+.height600r{
+	height:600rpx;
+}
+.height550r{
+	height:550rpx;
+}
+.height500r{
+	height:500rpx;
+}
+.height450r{
+	height:450rpx;
+}
+.height300r{
+	height:300rpx;
+}
+.height200r{
+	height:200rpx;
+}
+.height170r{
+	height:170rpx;
+}
+.height150r{
+	height:150rpx;
+}
+.height100r{
+	height:100rpx;
+}
+.height90r{
+	height:90rpx;
+}
+.height50r{
+	height:50rpx;
+}
+.height45r{
+	height:45rpx;
+}
+.height40r{
+	height:40rpx;
+}
+.height35r{
+	height:35rpx;
+}
+.height30r{
+	height:30rpx;
+}
+.height20r{
+	height:20rpx;
+}
+.height10r{
+	height:10rpx;
+}
+
+
+.height80{
+	height:80%;
+}
+.height70 {
+	height: 70%;
+}
+.height50 {
+	height: 50%;
+}
+.height30 {
+	height: 30%;
+}
+.height20 {
+	height: 20%;
+}
+
+/* 字体 大小 */
+.font50r{
+	font-size: 50rpx;
+}
+.font45r{
+	font-size: 45rpx;
+}
+.font40r{
+	font-size: 40rpx;
+}
+.font35r{
+	font-size: 35rpx;
+}
+.font30r{
+	font-size: 30rpx;
+}
+.font25r{
+	font-size: 25rpx;
+}
+.font20r{
+	font-size: 20rpx;
+}
+.font15r{
+	font-size: 15rpx;
+}
+.font10r{
+	font-size: 10rpx;
+}
+/* 字体 粗细 */
+.fontWeight100{
+	font-weight: 900;
+}
+.fontWeight800{
+	font-weight: 800;
+}
+.fontWeight700{
+	font-weight: 700;
+}
+.fontWeight600{
+	font-weight: 600;
+}
+.fontWeight500{
+	font-weight: 500;
+}
+.fontWeight400{
+	font-weight: 400;
+}
+.fontWeight300{
+	font-weight: 300;
+}
+.fontWeight200{
+	font-weight: 200;
+}
+.fontWeight100{
+	font-weight: 100;
+}
+
+
+/* 字体颜色 */
+.colorGrey{
+	color: #8799a3;
+}
+
+
+/* 行高 */
+.lineh40r{
+	line-height: 40rpx;
+}
+/* 上外边距 */
+.mtop2{
+	margin-top: 2%;
+}
+
+.mtop3{
+	margin-top: 3%;
+}
+/* 右外边距 */
+.mright2{
+	margin-right: 2%;
+}
+/* 左外边距 */
+.mleft2{
+	margin-left: 2%;
+}
+/* 外又边距 */
+.mright5{
+	margin-right: 5%;
+}
+
+
+
+/* 底部外边距 */
+.mbottom17{
+	margin-bottom: 17%;
+}
+.mbottom5{
+	margin-bottom: 5%;
+}
+.mbottom3{
+	margin-bottom: 3%;
+}
+
+/* 右侧内边距 */
+.pright5{
+	padding-right: 5%;
+}
+
+
+
+/* 边框 */
+/* 下边框1rpx 实线 灰色 */
+.borBottom1{
+	border-bottom: 1rpx solid #f4f4f5;
+}
+
+/* 定位 */
+.postitionBelow{
+	position: relative;
+}
+.postitionUp{
+	position: absolute;
+	z-index: 9;
+}
+
+
+/* 圆角4角*/
+.radius100r{
+	border-radius:100rpx ;
+}
+.radius50r{
+	border-radius:50rpx ;
+}
+.radius30r{
+	border-radius:30rpx ;
+}
+.radius10r{
+	border-radius:10rpx ;
+}
+.radius8r{
+	border-radius:8rpx ;
+}
+.radius5r{
+	border-radius:5rpx ;
+}
+
